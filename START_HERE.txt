@@ -1,0 +1,26 @@
+LNTP SCHEDULE UPDATER - WINDOWS, PER-USER INSTALL
+
+1. Extract the entire ZIP into a folder.
+2. Double-click "Install for my account.bat".
+   Use your normal Windows account; do not run as administrator.
+3. Open "LNTP Schedule Updater" from the Desktop or Start Menu.
+4. Browse to your current LNTP XER and the weekly engineering XER.
+5. Choose where to save the result, then click "Update Schedule".
+6. Review the reports, and import the updated XER into a P6 test copy first.
+
+The installer uses your Local AppData folder and per-user shortcuts.
+If compatible Python is absent, it downloads and verifies the official runtime
+from www.python.org and installs it for your account. No extra Python packages
+are needed to run the application. Original XERs are left unchanged.
+
+Keep the included Activity ID corrections CSV selected for your schedules.
+Each run creates its own output folder, with an updated XER and Reports.
+
+See GUI_QUICK_START.md for details, and SCHEDULE_UPDATER.md for field mappings,
+P6 import review, and limitations. The optional Build Windows EXE.bat is only
+for creating a standalone EXE; it is not needed to install or run the program.
+
+Validation: 29 regression tests passed. The actual GUI workflow was tested
+with both uploaded schedules on Linux, with an independent XER audit.
+The per-user installer passed a PowerShell syntax check, but installation on
+Windows and import into P6 have not been tested in this environment.

@@ -1,0 +1,24 @@
+# Python and local builds
+__pycache__/
+*.py[cod]
+.build-venv/
+.venv/
+build/
+dist/
+*.spec
+
+# Schedule exports and generated output stay local
+*.xer
+*.XER
+*.zip
+*.reports/
+Reports/
+LNTP_Update_*/
+.lntp-working-*/
+field_changes.csv
+activities.csv
+added_logic.csv
+warnings.csv
+percent_comparison.csv
+summary.json
+validation.json
